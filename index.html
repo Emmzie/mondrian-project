@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+   <html lang="eng">
+      <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Composition II in red, blue and yellow - Piet Mondrian 1930</title>
+         <style>
+            .container{
+               display:grid;
+               height:798px;
+               width:798px;
+               background-color: black;
+               gap: 20px; 
+               grid-template-columns: 1fr 3fr 0.3fr;
+               grid-template-rows: 0.9fr 1.1fr 0.3fr 0.3fr;
+            }
+
+            .white {
+               background-color: #fffafc;
+               grid-area:1/1;
+               border-bottom: solid black 25px;
+            }
+
+            .red {
+               background-color: #e42b2b;
+               grid-area: 1/2/3/4;
+            }
+
+            .white2 {
+               background-color: #fffafc;
+               grid-area:2/1;
+            }
+
+            .blue{
+               background-color: #025d9e;
+               grid-area: 3/1/5/2;
+            }
+
+            .white3 {
+               background-color: #fffafc;
+               grid-area: 3/3/4/4;
+
+               border-bottom: solid black 10px;
+            }
+
+            .white4 {
+               background-color: #fffafc;
+               grid-area: 3/2/5/3;
+               }
+
+            .yellow{
+               background-color: #f2de6e;
+               grid-area:4/3;
+            }
+         </style>
+
+      </head>
+
+      <body>
+         <div class="container">
+            <div class="white square"></div>
+            <div class="red square"></div>
+            <div class="white2 square"></div>
+            <div class="blue square"></div>
+            <div class="white3 square"></div>
+            <div class="white4 square"></div>
+            <div class="yellow square"></div>
+         </div>
+      </body>
+
+   </html>
